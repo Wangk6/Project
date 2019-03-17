@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+	double fahren, cels, temperature;
+	char letter;
+	
+	cout << "What temperature do you want to convert? " << endl;
+	cout << "Type in a number following a space with a 'f' for Fahrenheit, 'c' for Celsius" << endl;
+ 
+	cin >> temperature >> letter;
+	
+	if (letter == 'f' || letter == 'F')
+	{
+		cels = (5.0/9.0)* (temperature - 32.0);
+		cout << temperature << " degrees Fahrenheit is " << cels << " degree Celsius." << endl;
+	} 
+ 	else if (letter == 'c' || letter == 'C')
+	{
+		fahren = (9.0/5.0)* (temperature + 32.0);
+		cout << temperature << " degrees Celsius is " << fahren << " degree Fahrenheit." << endl;
+	}
+	else 
+		cout << "Invalid input, follow the steps." << endl;
+	return 0;
+ }

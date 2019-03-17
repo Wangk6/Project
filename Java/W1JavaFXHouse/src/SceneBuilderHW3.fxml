@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="496.0" prefWidth="433.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="CalculatorController">
+   <children>
+      <Pane layoutX="-74.0" layoutY="-104.0" prefHeight="662.0" prefWidth="507.0">
+         <children>
+            <Button fx:id="btn1" layoutX="86.0" layoutY="397.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" layoutX="385.0" layoutY="470.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" layoutX="85.0" layoutY="237.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn2" layoutX="179.0" layoutY="397.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" layoutX="179.0" layoutY="317.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" layoutX="178.0" layoutY="237.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="8">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" layoutX="274.0" layoutY="397.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" layoutX="274.0" layoutY="317.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="6">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" layoutX="273.0" layoutY="237.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="9">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn0" layoutX="179.0" layoutY="477.0" mnemonicParsing="false" onAction="#numberPress" prefHeight="80.0" prefWidth="95.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPlus" layoutX="386.0" layoutY="237.0" mnemonicParsing="false" onAction="#operatorPress" prefHeight="80.0" prefWidth="95.0" text="+">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDiv" layoutX="386.0" layoutY="317.0" mnemonicParsing="false" onAction="#operatorPress" prefHeight="80.0" prefWidth="95.0" text="\\">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEQ" layoutX="274.0" layoutY="477.0" mnemonicParsing="false" onAction="#operatorPress" prefHeight="80.0" prefWidth="95.0" text="=">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnClr" layoutX="86.0" layoutY="477.0" mnemonicParsing="false" onAction="#clearTextField" prefHeight="80.0" prefWidth="95.0" text="C">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="display" alignment="BOTTOM_RIGHT" editable="false" layoutX="86.0" layoutY="160.0" prefHeight="59.0" prefWidth="394.0" promptText="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
